@@ -147,7 +147,7 @@ class ExhibitionController extends Controller
         $dataJson = json_encode($exhibition);
         $data = json_decode($dataJson);
 
-        $exhibitionAreas = DB::select(DB::raw('select * from ds_exhibitions where id <> :id LIMIT 3'), array(
+        $exhibitionAreas = DB::select(DB::raw('select * from ds_exhibitions where id <> :id ORDER BY RAND() LIMIT 3'), array(
             'id' => $data->id
         ));
 
