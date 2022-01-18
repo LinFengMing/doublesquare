@@ -15,8 +15,8 @@
 </p>
 
 <p>
-    詢價圖片鏈接:<br />
-    <img src="{{ $params['img_src'] }}" />
+    詢價圖片鏈接:
+    {{ $params['img_src'] }}
 </p>
 
 <p>
